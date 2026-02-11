@@ -1,7 +1,7 @@
 
-  # User Greeting
+  # Renovation Deco
 
-  This is a code bundle for User Greeting. The original project is available at https://www.figma.com/design/XDsjCtA0jfGox8H61YNBZD/User-Greeting.
+  This is a code bundle for Renovation Deco. The original project is available at https://www.figma.com/design/XDsjCtA0jfGox8H61YNBZD/User-Greeting.
 
   ## Running the code
 
