@@ -23,7 +23,7 @@ export function Header() {
           </nav>
           
           <div className="flex items-center gap-4">
-            <a href="tel:+330768709694" className="flex items-center gap-2 hover:text-orange-500 transition-colors">
+            <a href="tel:+330631632551" className="flex items-center gap-2 hover:text-orange-500 transition-colors">
               <Phone className="w-4 h-4" />
               <span className="hidden lg:inline">Contactez-nous</span>
             </a>

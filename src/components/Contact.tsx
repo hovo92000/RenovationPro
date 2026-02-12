@@ -22,8 +22,8 @@ export function Contact() {
           <div className="flex flex-col items-center text-center p-6 bg-slate-800 rounded-lg">
             <Phone className="w-12 h-12 text-orange-500 mb-4" />
             <h3 className="text-white mb-2">Téléphone</h3>
-            <a href="tel:+330768709694" className="text-slate-300 hover:text-orange-500 transition-colors">
-              +330768709694
+            <a href="tel:+330631632551" className="text-slate-300 hover:text-orange-500 transition-colors">
+              +330631632551
             </a>
           </div>
 
@@ -65,7 +65,7 @@ export function Contact() {
 
         <div className="mt-16 text-center">
           <a 
-            href="tel:+330768709694" 
+            href="tel:+330631632551" 
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg transition-colors"
           >
             Appelez-nous maintenant
