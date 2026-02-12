@@ -1,58 +1,44 @@
-name: FTP Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Use Node.js latest
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
+          node-version: 20
+          cache: "npm"
 
-      - name: Install frontend dependencies
-        run: npm install
-        working-directory: frontend
+      - run: npm ci
+      - run: npm run build
 
-      - name: Build Vue.js app [frontend]
-        run: npm run build
-        working-directory: frontend
-
-      #- name: Install backend dependencies
-      #  run: npm install
-      #  working-directory: backend
-
-      #- name: Build Vue.js app [backend]
-      #  run: npm run build
-      #  working-directory: backend
-
-      #- name: Install backend dependencies
-      #  run: composer install
-      #  working-directory: backend
-
-
-      - name: Deploy frontend
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_FRONT_USER }}
-          password: ${{ secrets.FTP_FRONT_PASSWORD }}
-          local-dir: ./frontend/dist/
-          server-dir: /
+          path: dist
 
-      #- name: Deploy backend
-      #  uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      #  with:
-      #    server: ${{ secrets.FTP_SERVER }}
-      #    username: ${{ secrets.FTP_BACK_USER }}
-      #    password: ${{ secrets.FTP_BACK_PASSWORD }}
-      #    local-dir: ./backend/
-      #    remote-dir: /
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
