@@ -7,7 +7,12 @@ import doImg2 from "@assets/icons/doHayat.jpeg"
 import doImg3 from "@assets/icons/doBaxniq2.jpeg"
 import posleImg2 from "@assets/icons/posleHayat.jpeg"
 import posleImg3 from "@assets/icons/posleBaxniq2.jpeg"
-
+import doMijancq from "@assets/icons/doMijancq.jpeg"
+import posleMijancq from "@assets/icons/posleMijancq.jpeg"
+import doAstichan from "@assets/icons/doAstichan.jpeg"
+import posleAstichan from "@assets/icons/posleAstichan.jpeg"
+import doZal from "@assets/icons/doZal.jpeg"
+import posleZal from "@assets/icons/posleZal.jpeg"
 
 
 interface BeforeAfterImage {
@@ -22,10 +27,10 @@ export function Gallery() {
 
   const galleryImages = [
     {
-      title: "Salon moderne",
-      category: "Salon",
-      beforeImage: doImg1,
-      afterImage: posleImg1
+      title: "Terrasse moderne",
+      category: "Terrasse",
+      beforeImage: doImg2,
+      afterImage: posleImg2
     },
     {
       title: "Salle de bain avec douche italienne",
@@ -39,24 +44,24 @@ export function Gallery() {
       beforeImage: doImg3,
       afterImage: posleImg3
     },
-    // {
-    //   title: "Peinture et décoration",
-    //   category: "Peinture",
-    //   beforeImage: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHBhaW50aW5nJTIwYmVmb3JlfGVufDF8fHx8MTc2NDQ5MDc3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    //   afterImage: "https://images.unsplash.com/photo-1721395283816-48b567a9e4d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludGVkJTIwcm9vbSUyMG1vZGVybnxlbnwxfHx8fDE3NjQ0OTA3NzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    // },
-    // {
-    //   title: "Pose de carrelage",
-    //   category: "Carrelage",
-    //   beforeImage: "https://images.unsplash.com/photo-1708919268841-27c120c45a92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmbG9vciUyMHRpbGluZyUyMHdvcmt8ZW58MXx8fHwxNzY0NDkwNzcyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    //   afterImage: "https://images.unsplash.com/photo-1760259477563-90a12ff52b61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5pc2hlZCUyMHRpbGUlMjBmbG9vcnxlbnwxfHx8fDE3NjQ0OTA3NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    // },
-    // {
-    //   title: "Rénovation complète salon",
-    //   category: "Rénovation",
-    //   beforeImage: "https://images.unsplash.com/photo-1763667083561-90f384685999?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb29tJTIwcmVub3ZhdGlvbiUyMGVtcHR5fGVufDF8fHx8MTc2NDQ5MDc3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    //   afterImage: "https://images.unsplash.com/photo-1667584523543-d1d9cc828a15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY0NDY2OTM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    // }
+    {
+      title: "Couloir",
+      category: "couloir",
+      beforeImage: doMijancq,
+      afterImage: posleMijancq
+    },
+    {
+      title: "Escalier",
+      category: "Escalier",
+      beforeImage: doAstichan,
+      afterImage: posleAstichan
+    },
+    {
+      title: "Rénovation complète salon",
+      category: "Salon",
+      beforeImage: doZal,
+      afterImage: posleZal
+    }
   ];
 
   return (

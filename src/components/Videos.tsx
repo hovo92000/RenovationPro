@@ -3,35 +3,50 @@ import { Play, X } from "lucide-react";
 import video1 from "../assets/icons/video1.mp4";
 import video2 from "../assets/icons/video2.mp4";
 import video3 from "../assets/icons/video3.mp4";
+import video4 from "../assets/icons/video4.mp4";
+import video5 from "../assets/icons/video5.mp4";
+import video6 from "../assets/icons/video6.mp4";
 
 export function Videos() {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const videos = [
-    {
-      title: "Rénovation complète d'une salon",
-      src: video1,
-      // poster:
-      //   "https://images.unsplash.com/photo-1760438492655-63efac635f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      duration: "0:31",
-      description: "Découvrez le processus complet de rénovation d'une salon",
-    },
-    {
-      title: "Rénovation complète d'une cuisine",
-      src: video2,
-      // poster:
-      //   "https://images.unsplash.com/photo-1760438492655-63efac635f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      duration: "0:41",
-      description: "Découvrez le processus complet de rénovation d'une cuisine",
-    },
-    {
-      title: "Rénovation complète d'une salle de bain",
-      src: video3,
-      // poster:
-      //   "https://images.unsplash.com/photo-1760438492655-63efac635f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      duration: "0:28",
-      description: "Découvrez le processus complet de rénovation d'une salle de bain",
-    }
+{
+  title: "Rénovation complète d'un salon",
+  src: video1,
+  duration: "0:31",
+  description: "Découvrez la transformation complète de ce salon, du début jusqu'au résultat final.",
+},
+{
+  title: "Rénovation complète d'une cuisine",
+  src: video2,
+  duration: "0:41",
+  description: "Suivez les étapes de rénovation de cette cuisine et son résultat moderne et fonctionnel.",
+},
+{
+  title: "Rénovation complète d'une salle de bain",
+  src: video3,
+  duration: "0:28",
+  description: "Voyez comment cette salle de bain a été entièrement rénovée avec un design moderne.",
+},
+{
+  title: "Transformation d'une cuisine moderne",
+  src: video4,
+  duration: "0:19",
+  description: "Découvrez la transformation de cette cuisine en un espace moderne et élégant.",
+},
+{
+  title: "Rénovation complète d'une cuisine contemporaine",
+  src: video5,
+  duration: "0:39",
+  description: "Explorez la rénovation de cette cuisine, pensée pour allier esthétique et praticité au quotidien.",
+},
+{
+  title: "Transformation complète d'un couloir",
+  src: video6,
+  duration: "0:45",
+  description: "Découvrez comment ce couloir a été transformé en un espace lumineux, moderne et accueillant.",
+},
   ];
 
   return (

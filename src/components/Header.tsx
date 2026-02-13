@@ -1,5 +1,5 @@
 import { Building2, Phone, Mail } from "lucide-react";
-import logo from "@assets/icons/logo2.png";
+// import logo from "@assets/icons/logo3.jpeg";
 export function Header() {
   return (
     <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
