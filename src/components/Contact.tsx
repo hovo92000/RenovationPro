@@ -74,7 +74,7 @@ export function Contact() {
       </div>
 
       <footer className="mt-20 pt-8 border-t border-slate-800 text-center text-slate-400">
-        <p>&copy; 2025 Rénovation Pro. Tous droits réservés.</p>
+        <p>&copy; 2025 Rénovation Deco. Tous droits réservés.</p>
       </footer>
     </section>
   );

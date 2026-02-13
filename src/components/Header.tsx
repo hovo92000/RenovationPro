@@ -9,7 +9,7 @@ export function Header() {
             <Building2 className="w-8 h-8 text-orange-500" />
             {/* <img src={logo} alt="Logo Rénovation Pro" style={{ width: "100px" }}/> */}
             <div>
-              <h1 className="text-white">Rénovation Pro</h1>
+              <h1 className="text-white">Rénovation Deco</h1>
               <p className="text-sm text-slate-300">20 ans d'expérience</p>
             </div>
           </div>
