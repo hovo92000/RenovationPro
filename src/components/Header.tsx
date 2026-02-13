@@ -1,13 +1,13 @@
 import { Building2, Phone, Mail } from "lucide-react";
-// import logo from "@assets/icons/logo3.jpeg";
+import logo from "@assets/icons/logo4.png";
 export function Header() {
   return (
     <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Building2 className="w-8 h-8 text-orange-500" />
-            {/* <img src={logo} alt="Logo Rénovation Pro" style={{ width: "100px" }}/> */}
+            {/* <Building2 className="w-8 h-8 text-orange-500" /> */}
+            <img src={logo} alt="Logo Rénovation Pro" style={{ width: "100px", transform: "scale(1.7)" }}/>
             <div>
               <h1 className="text-white">Rénovation Deco</h1>
               <p className="text-sm text-slate-300">20 ans d'expérience</p>
